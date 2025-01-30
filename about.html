@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishant Solutions Private Limited</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> <img src="assets/images/logo-removebg-preview.png" alt="image"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="vision.html">Vision and Mission</a></li>
+              <li><a class="dropdown-item" href="chairpersons.html">Chairpersons Message</a></li>
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Solutions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="solution-1.html">Data Centre Solutions </a></li>
+              <li><a class="dropdown-item" href="solution-2.html">Building Management Solutions</a></li>
+              <li><a class="dropdown-item" href="solution-3.html">Structured Network Solutions</a></li>
+              <li><a class="dropdown-item" href="solution-4.html">Wireless and P2P Network Solutions</a></li>
+              <li><a class="dropdown-item" href="solution-5.html">Cybersecurity Solutions</a></li>
+              <li><a class="dropdown-item" href="solution-6.html">Nurse Calling Systems</a></li>
+              <li><a class="dropdown-item" href="solution-7.html">Intercom and PBX Systems </a></li>
+              <li><a class="dropdown-item" href="solution-8.html">Public Address and Voice Communication Systems</a>
+              </li>
+              <li><a class="dropdown-item" href="solution-9.html">Conference Hall and Auditorium Solutions</a></li>
+
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Insights
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="blog.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="caseStudies.html">Case Studies</a></li>
+              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery (Year Wise)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="1.html">Reach Us</a>
+          </li>
+
+
+
+        </ul>
+      
+
+
+      </div>
+      <div class="contact-btn">
+        <a href="1.html" class="btn-link">
+          <button class="btn">Contact</button>
+        </a>
+      </div>
+      
+    </div>
+  </nav>
+
+
+  
+
+  <div class="solutionBanner">
+    <img src="assets/images/aboutBanner-img.jpg" alt="solution Banner">
+    <div class="solutionText">
+      <h1>About - Vishant Solutions Private Limited</h1>
+    </div>
+  </div>
+  <style>
+    /* General styling */
+  .solutionBanner {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; Full viewport height */
+  overflow: hidden;
+}
+
+/* Banner image */
+.solutionBanner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  filter: brightness(0.5); /* Darkens the image to enhance text visibility */
+  transition: filter 0.3s ease-in-out; /* Smooth transition for filter */
+}
+
+/* Banner text */
+.solutionText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1; /* Ensure the text stays on top of the image */
+  padding: 0 20px; /* Add padding for text spacing */
+  max-width: 80%; /* Prevent text from stretching too wide */
+  font-family: Arial, sans-serif;
+}
+
+/* Text styles */
+.solutionText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds shadow for clarity */
+}
+
+/* Responsive text sizing */
+@media (max-width: 1200px) {
+  .solutionText h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .solutionText h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutionText h1 {
+    font-size: 22px;
+  }
+
+  .solutionBanner img {
+    height: 300px; /* Reduce the height on tablets and smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .solutionText h1 {
+    font-size: 20px; /* Slightly smaller text for small mobile screens */
+  }
+
+  .solutionBanner img {
+    height: 250px; /* Further reduce the height for mobile screens */
+  }
+}
+
+/* Add an overlay for better text visibility */
+.solutionBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height to cover the image */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  z-index: 0; /* Overlay is placed behind text */
+}
+
+/* Hover effect to adjust image brightness */
+.solutionBanner:hover img {
+  filter: brightness(0.7); /* Lighter on hover */
+}
+
+
+  </style>
+
+<nav class="breadcrumb-nav">
+  <ul class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+  
+  <!-- <section class="one">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="WhatWeDo">
+            <h1>About</h1>
+            <p>Vishant Solutions Private Limited is a technology-driven company that specializes in offering a range of
+              innovative solutions and services. The company provides cutting-edge technology solutions in areas such as
+              data centers, building management, network infrastructure, wireless communication, cybersecurity, and
+              more. Their expertise includes systems like nurse calling, intercom, public address, voice communication,
+              and IT infrastructure management.
+
+              Vishant Solutions is committed to delivering efficient, secure, and scalable solutions tailored to meet
+              the diverse needs of its clients. With a team of skilled professionals and a strong focus on quality, the
+              company aims to help businesses and organizations improve their operations and achieve optimal
+              performance.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="WhatWeDo">
+            <img src="assets/images/whatWeDo.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <section class="about1-section">
+    <div class="container">
+      <div class="row">                
+        <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+          <div class="inner-column">
+            <div class="sec-title">
+              <span class="title">About - <strong>Vishant Solutions Private Limited</strong></span>
+              <h2>Dedicated to innovation and excellence in technology solutions.</h2>
+            </div>
+            <div class="text">
+              Welcome to Vishant Solutions Private Limited, your trusted partner in integrated IT infrastructure solutions. Based in India, we specialize in delivering cutting-edge technology solutions tailored to meet the unique needs of businesses, corporations, and government organizations worldwide. With a deep commitment to innovation, reliability, and excellence, we empower our clients to achieve their digital transformation goals seamlessly and efficiently.
+            </div>
+            
+            <!-- <ul class="list-style-one">
+              <li>Revolutionizing healthcare with smart technology solutions</li>
+              <li>Empowering the future through education and skills enhancement</li>
+              <li>Advancing sustainability with innovative technological approaches</li>
+            </ul>
+            
+            <div class="btn-box">
+              <a href="contact.html" class="theme-btn btn-style-one">Contact Us</a>
+            </div> -->
+          </div>
+        </div>
+  
+        <!-- Image Column -->
+        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column wow fadeInLeft">
+            <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/images/aboutImage1.1.png" alt=""></a></figure>
+            <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/images/aboutImage1.3.png" alt=""></a></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Who-we-are">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="sec-titlee">
+            <!-- <span class="title">About - <strong>Vishant Solutions Private Limited</strong></span> -->
+            <h2>Who We Are?</h2>
+          </div>
+          <div class="text">
+            At Vishant Solutions Private Limited, we are passionate about helping businesses stay ahead of the curve with robust, scalable, and secure IT infrastructure solutions. Our team of seasoned experts is dedicated to providing a wide range of services, including cloud computing, data centre management, network optimization, cybersecurity, and enterprise IT solutions. We leverage the latest advancements in technology to build custom solutions that ensure maximum performance, minimal downtime, and long-term success for our clients.
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/What we are01.png" alt="">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+ 
+
+  <section class="two">
+  <div class="container">
+    <div class="row text-center">
+      <div class="Choose-us">
+        <h1>Why Choose Us?</h1>
+        <p>Why choose us as your preferred technology services partner?</p>
+      </div>
+    </div>
+    <div class="row CHOOSE text-center">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="Choose-us">
+          <div class="icon-text-wrapper">
+            <img src="https://img.icons8.com/material-rounded/24/positive-dynamic.png" alt="Expertise">
+            <h5>Expertise and Experience</h5>
+          </div>
+          <p>With years of experience in the IT infrastructure industry, we have a deep understanding of the challenges and opportunities faced by businesses today.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="Choose-us">
+          <div class="icon-text-wrapper">
+            <img src="https://img.icons8.com/ios-filled/50/binoculars.png" alt="Innovation">
+            <h5>Innovative Technology</h5>
+          </div>
+          <p>We stay ahead of technological trends to offer cutting-edge solutions that give you a competitive edge.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="Choose-us">
+          <div class="icon-text-wrapper">
+            <img src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/53/external-Wrenches-construction-vectorslab-glyph-vectorslab.png" alt="Tailored Solutions">
+            <h5>Tailored Solutions</h5>
+          </div>
+          <p>We don’t believe in one-size-fits-all. Every solution we offer is customized to meet the specific needs of your business or organization.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="Choose-us">
+          <div class="icon-text-wrapper">
+            <img src="https://img.icons8.com/ios-glyphs/30/security-shield-green.png" alt="Global Reach">
+            <h5>Global Reach</h5>
+          </div>
+          <p> While headquartered in India, we serve clients across the globe, bringing world-class IT solutions to diverse industries and sectors.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="Choose-us">
+          <div class="icon-text-wrapper">
+            <img src="https://img.icons8.com/ios-glyphs/30/security-shield-green.png" alt="Customer-Centric">
+            <h5>Customer-Centric Approach</h5>
+          </div>
+          <p>Our focus is on building long-term relationships with clients, ensuring we understand their unique needs and deliver results that exceed expectations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  
+        <div class="Expertise">
+          <h1>Our Expertise</h1>
+          <!-- <p>Why choose us as your preferred technology services partner?</p> -->
+        </div>
+      
+
+        <div class="bodyDifferent">
+    <section class="different">
+      <img id="elephants" class="elephants"
+      src="data:image/png;base64,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" alt="brainstorm-skill">
+      <h1>IT Infrastructure Solutions:</h1>
+      <p>We have extensive experience in the
+        design, deployment, and
+        maintenance of complete IT
+        Solutions and Services.</p>
+
+    </section>
+
+    
+   
+
+    <section class="different">
+      <!-- <img id="dataa" class="dataa" src="https://assets.codepen.io/4787486/tree.svg" alt=""> -->
+      <img id="dataa" class="dataa" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQUlEQVR4nO3cv4pTQRTH8ROJu5nOTpYpVBAELWwsxGpsFESw0WpBEZGwif86sbLxCWzsxVrYJ7DxASzstNxGsLBQ1nu9emQVLCyuK4Tc35l8P3BeYL47OZktYgYAAAAAAAAACrrXG648tmqGPvCOIASRNvQN6LghsYK0Nv8zjc1eud2YWM0iBWl/zWzb7fHYahUvyHxvnrvZyGoUNIg3NntqNYoapP09D602kYM0Nv/R2Oy21WS/B1NSXsr87VI64m8PbPZF6Rq7c81qoR6kpOxXJsf8/eh63z5pvtn8otUgQpCSsl+dHPed0c2+m/Klta1zFl2UICVl35yc8A+jW3035eNXu3vSIosUpKTs0/VT/smmfct+Z9emRy2qaEFKyv5g/bR/tq2+KO/c7h22iCIGKSn7o7UzvtsbZfbG7f4hiyZqkJKyP1k7u7fM+3ZKvH9GRg5SUvZnB8s/XvOzlxZJ9CAlZX8xvtAbxSKpIcj5lH17fJkgZQlB9q37TpCiFMSdIIUgq7dD/gdLPWkNQdLwEQgicPCFIMvbIYUgWku9EGSxQRaNjyyC1PUOWTRuCEGGpfZSLyx1gkjhhoghiBiCiCGIGIKI4WEohiBiCCKGIGJY6mIIIoYgYggihiBiCCKGr71iCCKGIGIIIoalLoYgYggihiBiCCKGIGIIIoYgYggihiBiCBI0SIRpV+nnmSJMS5CNwSMQRODgO4IMf9gdQYY/4I4gscdqMPQhdgQhiLSh/6o7bggAAAAAAIBV6id3JArBO8b5FAAAAABJRU5ErkJggg==" alt="document">
+      <h1>Data Management Solutions</h1>
+      <p>Our team of experts can help our clients to safeguard their data, and to make the most of their data by making
+        it more easily searchable, shareable, and analysable through data digitization, data backup and recovery, and
+        data security. </p>
+      <!-- <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+    <p>When managed properly, trees are a good source of renewable energy and construction material.</p> -->
+    </section>
+
+    <section class="different">
+      <img id="support" class="support" src="assets/images/support-removebg-preview.png" alt="">
+      <h1>Technical Support And
+        Maintenance: </h1>
+      <p>We provide comprehensive technical support and maintenance services to ensure that our clients' systems and
+        equipment are always running at peak performance. </p>
+      <!-- <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+    <p>When managed properly, trees are a good source of renewable energy and construction material.</p> -->
+    </section>
+    <section class="different">
+      <img id="orion" class="orion" src="assets/images/unnamed-removebg-preview.png" alt="">
+      
+      <h1>Network Solutions</h1>
+      <p>With a deep understanding of various
+        networking technologies, such as routing,
+        switching, and security, we can design,
+        deploy, and maintain networks that are
+        optimized for performance and security</p>
+    </section>
+
+   
+  </div>
+
+
+
+
+
+
+ 
+
+  <section class="aboutOne">
+    <div class="container">
+      <div class="row">
+        <div class="OurCommit">
+          <div class="sec-title">
+            <h2>Our Commitment to Excellence</h2>
+            <p>At Vishant Solutions, we understand the evolving nature of the digital landscape, and our commitment to excellence drives everything we do. From designing robust IT systems to offering ongoing support and maintenance, we ensure that your infrastructure is always at peak performance. Our team of experts is dedicated to providing exceptional service and innovative solutions that support your business goals, now and into the future.</p>
+          </div>
+        </div>
+        <div class="OurCommit">
+          
+            <h2>Contact Us</h2>
+            <a href="#" style="text-decoration: none; color: #d42e76;"><p>Ready to take your IT infrastructure to the next level? Reach out to us today and discover how Vishant Solutions can help you harness the power of technology to drive success.</p></a>
+          
+        </div>
+            
+        <!-- <img src="" alt=""> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="footer-left" itemscope itemtype="http://schema.org/Organization" class="h-card">
+      <a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt="Logo" itemprop="logo"
+          class="u-logo logo" /></a>
+      <h3 itemprop="name" class="p-name"><span>Vishant Solutions</span> Private Limited</h3>
+      <h6>At Vishant Solutions Private Limited specialize in designing, implementing, and
+        maintaining integratedsystems
+        that streamline business processes and improve overall efficiency. Our team of experienced professionals has
+        awide range of expertise in various industries, including automation, IT, and engineering. </h6>
+    </div>
+
+
+
+    <div class="footer-center">
+      <!-- Contact Section -->
+      <div class="footer-about1">
+        <span>CONTACT</span>
+      </div>
+
+      <!-- Address Section -->
+      <div itemscope itemtype="http://schema.org/PostalAddress" class="footer-address">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9ElEQVR4nO2ZTWgTQRTH/34V1Iv4hWjxC0VB8CgIPXgTParxIChCMcl7SRHpRU+BHvwCW5Bar1JLrsWDJ0HxUPTgwUNFUATRQ9Gq4EeafZPWkSGJKViS7MzubIT84cGy2bzZ37y3M29mgK666sqbNFI9CtynQFcUaEJATxX4hbHa9f3qb9ynkV6FTlOA/H4B3xHwVwXW7Zh5VsCjAbL7kn5/lJDZpkBFAS20C/AvkPkvTZSQ25oIhIDPCviHLcASQN8F2TPeADQKywV8OyqAJYBGTBuxQyjQeFwQqmH3NLAsNhAB3/IAoWuDwY1YIALwKV8QqmYB6ESkEBq5DQKe9Q0ioC8a6Y2RgQj4rm8I1Uix0UggShjoFbAkB0KBma8iiAYNJQWhGlZwBlHgdw69OSOghzWbcQB54wQRILPXMq8/BcieXDyxVSdSSgnos43PMmi3NYiAz1tAzJbBe5p1jhmNLKJ7zgXkukWD/W34vWDRQVetQUxVGrKxksal1a38aqTXCGguHAyNO4DwZMjGpkP4fhUyKpMOIFSMa3RRoLchO6loDWJK6pCpNa+R3dzKrwZvCbsYE9CINUhtfR32Y7/WRgfdDOtXgS9bg1TAxy1Gl/lmVauZX8wzYf1WkD1mDaIxuNamzjJpI6AxAR+o+zLXpvi0Wd8LKDDvYg1SfQF6YpEGiyNUNubo47EThO3sHrWJy6xel9lIU6D3CYJ8iGwzT4HzyYEQIyppFFYKeMp/SvGURmoFolQZ+V1mE83jd/HTVMqIQ7X1xIKHSPwW8GnEKQUe9BCRQfiQgIZjTKkx+JLZzqyedUQO8iDyj7s1TKpHwI8ijMRzs+DyCtGAubhOgV66g9C0Rv/6RCAaMAObFOi1A8THOaS3oxNUwkCvTRljdlzMsR067xyR2t6zqp52ZQ6hEyWggwL+1gZEqYLcEXSyFHKHBfSrCYQ4rfZ8qoLc0aUOSs29/wairjIyO83Oh4CfVY2G58A7/j7QVVddwaf+AAaek0mZV5EDAAAAAElFTkSuQmCC" alt="marker" width="30px">
+        <p>
+          <span itemprop="streetAddress" class="p-street-address">M/s. Vishant Solutions Pvt. Ltd., Plot No. 267,</span>
+          <span itemprop="addressLocality" class="p-locality">Saheed Nagar, Bhubaneswar,</span>
+          <span itemprop="addressRegion" class="p-region">Odisha, 751007</span>
+        </p>
+      </div>
+
+      <!-- Email Section -->
+      <div itemscope itemtype="http://schema.org/PostalAddress" class="footer-address">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhUlEQVR4nO1WsU4CQRSciBYm1tQWNioFjZXfQUFjB9y+2NhobKC19ROwpbDhA8RC1FDYkNj4EcQYeGvimmXfRoSLLHeiCblJNrnsvZm52X3ZPSBDhpWFQZTXUGfLHAZRfsaYQUUNMsscDCrONWbQhwY1kyekpmgEG/cY6l4Kh26JSrnwLSvlLMdxrcZYqxdifG3QWNNQVQa9uTn1FEuawgi1PQY9TH+01Qwy9nND0A6DboWkGXRhUN2YTdlYdynVyKccQe369wsbi+iP6Rm0H5dyUiOR8cT78leT2GTq3A6fUoTLcdw0iU8ZxGJ6559FjO2cf7a1lpPKeIjaNkN1xPCVQRVXGxUY9OhGVBB+xdZIbcdyExkz1BFDDYTQtY32fSVKuem9lGbsivnAagQbM+hGQ7WE/K6h6rZrEQjp8Lrjjpux5TQDTy4NetE4PkRCaKgDDXpe8MhUVwa0hZQwONlkqEt/dM5b6nZawxjtdkji/u9fidRfZI//5lo0//UjkCHDyuATXVa4WLjFl7EAAAAASUVORK5CYII=" alt="new-post">
+        <p>
+          <span itemprop="streetAddress" class="p-street-address"><a href="mailto:info@vishantsolutions.com"
+              itemprop="email" class="u-email">info@vishantsolutions.com</a></span>
+          <span itemprop="addressLocality" class="p-locality"><a href="mailto:sales@vishantsolutions.com"
+              itemprop="email" class="u-email">sales@vishantsolutions.com</a></span>
+          <!-- <span itemprop="addressRegion" class="p-region">Odisha, 751007</span> -->
+        </p>
+      </div>
+
+
+      <!-- Phone Section -->
+      <div itemscope itemtype="http://schema.org/PostalAddress" class="footer-address">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbklEQVR4nM2WO4xMYRTHf15L5RXveBREIaLw6CiIZ0iE2FohGXPOzdCK2GyCiIKEjoKQkKDQ6BASQSNCh8o7GhqJ3TnnJj45ZtbObHYnsjN3+Se3Od+d+X3fued85w//m/rQJQmdN2bAxP4pjl4x9KehlqPbxwB6aK4hTx19XeXgCkd7HPmckBkFQiuzA2jI/QFQoneiIc8cvVoQtHe8IY8NfRCpblwzyisNqebIzo6Dq2TLHU0/yBYMt+7oMUc+JkrTOgpO6LxW4ERpkiMvHL3YYTDjDPlSRfaO9E6kOqqcTsvRi47cHmnd0NOGPikALGsMyfvRZUPX+igtNqSvkAILGXLH0RsMkaPXDblLUbLfraOeI5sHYonuCY6+NfRcYeCQIccdeZeoTB08cXlDFFar4mtbie6uWuvIzaj2QbgeNLQ/p7ypMHg/laWGfnP0SGPc0JOGfneytYXBc2RrfO8qursZLucN+Voo3ClntfTKxiGXzfk4eWO8ALj21NIr6xrjhpyITVXJ9gzEcrJdMVajEA250Figo5IhZ2rfvBnuSKkOiQzci0vG0FM55R2OvHT0Q062bXTUP+nVs8Ol19H10eeOXOtDFjUPFu2NjTlyKXF4+qg3EOOxlt7mgot5PtJvDFnlyHNHP0XBtltw7ujRxj5vpcbTh71qt9Wiz2/9bQEZ2eowkD+oLKTdS6ZuDt7nZFtavZs4MNORN45ebgs6+IfdXXG311N/Y7iRGh4uvFzM8kRlMp1U3RDeiXkeZqKK7ouUhpUy5KEjrxLlORSlupm4EDYqPFw8hj5KlGYVBh2qRGl+uNdWrfZP9At5aWkQwOn+wgAAAABJRU5ErkJggg==" alt="phone--v1">
+        <p>
+          <span itemprop="telephone" class="p-tel">+91 6743502509 </span>
+          <span itemprop="telephone" class="p-tel">+91 9439777158 </span>
+          <span itemprop="telephone" class="p-tel">+91 9437748593</span>
+        </p>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="footer-right">
+      <div class="footer-about">
+        <span>Quick Links</span>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html">Vision & Mission</a></li>
+          <li><a href="chairpersons.html">Chairpersons Message</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+
+      </div>
+      <div class="footer-socials">
+        <a href="#" rel="me" aria-label="Facebook" itemprop="sameAs" class="u-url">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nO2ZzUrDQBDH82S7Vby1JTsoPpAieFBv0qMP4UyEQq03L4KWWh/Am4eASXupYEeiWL9o6W5jdgPzgzku+f/2m00UCYIgBE3DYKwArxTgRANxFaUAJwqor+KkvVZ4beiwqtB6URk8cO557+HhU4Ja1gLFtAlI4NJewODYe3CYV24tEEBo/l4ioEvoxc2dhI86Q767TznLpzyb8Q+CHoGN7YSvb554GTpkgePOcGn44AUGo5RrLZCPX/4E3ju55a3di5Xaexd4/b1imd/XxartvQvYThktAvA/vb6I52wa3gjYMBil9RY47z7WW+D07CE8AdmFQEaAZAppOYlJdiGWbRTkNspyEuu6XSVUyU+L6wlgZi8A1C/7QudcBnv2AnHS9h4cPqoB2IxcKH4u+A6vgPadwn9JUKt4n6/yuV0V3zLYc+55QRCEqCreAAESa+zxbT1rAAAAAElFTkSuQmCC"
+            alt="facebook"></a>
+        <a href="#" rel="me" aria-label="Twitter" itemprop="sameAs" class="u-url">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACO0lEQVR4nO3YTYjNURjH8Q/lffIWCwsmJSlKzUJRUmJmyMLSWynJS9mgTHa2NsrKQmM2svDSTHZWRsYCNylhQfJSLMhL5KVhrk49U7d/M3PvHfO/92Keehbn/M/5n2+/c57n/5w/4/Yf2yZ0oQ+FnLwv1mivBqwJV1GssffE2mWtHnDF8O5ycO11hCuGt44E2NUAgJ0jAfY1AODNkQALDQBYGC3gPewbwg/hSwULX4vxl/MC/IX1w8w7UGbRB5iFFfiYF2DyV5iLJfgcfdvKpKfXWIgFeJnnFg/6pRh7MNofsAjz8SYz9itWYRpu530GS31HRrUbmBh5dKDkSGyN/u5aBEmpp3PUnFHtaLzjTLQPR/tUraI4672hzpZQ7TtWYgY6MsegLoDJOzKqPYzzlqwN/fUG/IEWTMfj6Dsd7zo+CrgxByziUajWEsBpuzfH9vc2AmBxCNVS7puHxfhUb8ABbI/5SbXrJQVost31BuyIucci7TSXfM72xrOL9QI8F/P2ZFTbFe1URCzFbLyoNWAKgMlYF8FRzKh2Idp3MQkb4utSE8CUUuZgGd5nng2qlqqX59F3ooqvyh8DvotqJkXpkxEWSaqtxc9I2KsxBffzBPyGNZiKW2XGDqp2MtrPMBPLo8oZc8CUTnZiAs5XoHR/qDaUHckD8E6U7GerCKSnw1wT9uNt3lGclxf+6mtnV6Nf3NsaAHCjMtZTR7grKrCmKi85xTGES9eFiq01zkPePzA7K9nWcftn7Td9BtjeRgMKLwAAAABJRU5ErkJggg=="
+            alt="twitterx--v1"></a>
+            <a href="#" rel="me" aria-label="Github" itemprop="sameAs" class="u-url">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvUlEQVR4nO2ZTYhPURjGf/I9sjCMzUS+VhOSxSRmoXwkSqMsZCI7NRo7Mis2zCwkqUEiFtNkRTEUGUO+w8gYTBYaOzQ2vmaocXXq/Ot0u+/533vuOWbSferd3HPO8zz3nnPe83GhQIECBf4XLAL2AB1AD/AF+K1jUD9TZY3AQsYIJgANwEMgyhgPgO3A+NEyvwF452A8Hv3A+n9pvAI468F4PM4AU0Obnw08D2A+0vEUqAppvj+g+cgYUlUhhk3ILx8l9MQUny+QNOY7gUM6m/xxMKna3AcOAtcSyk/7zDZJBtYYdZYCXUbZJ533u3T06Gel8lvAEqP9OkFjrY88L6XKGQn1a4FqC1+1rhPHTEHjbd51osEyBNS88IVpFp1teYhtK2yNP/8stuioeeK8t5FIf3p+gRpgyDLZ57uQNlpeYD/+ccCit9uFsEMg++p5/Jvz4Jug2Y4DXghkVwiHTkFTLaKZMSiQHSccTgian13IfglkRwmHY4LmsAvZD4HsAuHQLmh+dyH7IJDdJhzuCJoDLmTPBLKhgFlo2LI7zYzzlrysthi+scOid86FcJeF8L3n41+FHiaS3k4X0nll9vlXgYkezE8Crlt0lIe5ruTmHj8p1DxZnsN8rWXBLMXNHPxsMYg+6l7ZmHA2vgfsA+qASgvfLGA10Aw8KmO8FJvzHmj6DLJeYI42MuAguCml6UjHSx8XX3WxufAEGAes0NtqU/BVCr60lwMjwEo84VSMfKt+vgy4CDwGLuvzc1auSIg2PGIycNcgf50jjR5JYb5bZyevUAfvNzGRBQ48h8uY7xMuDLygMtYTI3pOXAJuAE05e6A7pPkSVNeeFBa5lhTtW4TFqi3EsLFhlc46ppHWFO1aY216fWabrFA5ul7ftKmvuDdFmyZdV63y9aP5gyOO6YHqFihQoABjF38BeDYn1Jvrn9EAAAAASUVORK5CYII="
+          alt="github"></a>
+        <a href="#" rel="me" aria-label="LinkedIn" itemprop="sameAs" class="u-url">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEklEQVR4nO2YO08CQRDH11jYGisTW7X1E1jZKcTSL2EQJHJbEAsJiZ2FhZ2FpbWFDY/IO0YN3GIEiQWFxhhBER8oMGZvFVC4wJ3mbi/ZfzIh7GyW+e3Mzh2LkJCQkBDfkrKLSCJhhEkVYQIGWRVhEkKSbP9b8FjeNDBoUDG//p03P3hgJtt0AChlw0HwBJBEgjoA5CeOMlDRDqC2mCcNyJUEtBJjn/S7ERCapRL8tC8FR5dlqNbqECmUYWojZQyEZvVaxJVUgu5UOF9mmbAEwEpM2flOPb3VWTlZAsBl9Qx42BmgEDQToXwJJi11BrDVu5AzAcgR7TY63s8vZQC5j9tznF8bsHZK+7xBAI4I9BId7+ef8CZhK1iE7HUVXt8b8PDyoZTi8n4ORtyJ/pk0E2DGn4LbSg3UdFKswLg3ybLEI0Dh7gX6KZQvwZArzifAoJrfyaiXkpkAjWZTqf+57TQs7WYhcFHqOW8vdcMOOm8A6wdXLDBa4540DK8m4PD8vmte7va53dF4AhjD8Z+t0pOG2a2zrnmPrx/qryVmATSbHf6WyTAqJVTmRvkCYP6o9rWwACAiA98SJYTFISaiCyHRRv/lH1mcPWh+Gx0fxK9lLfzXBxlPV4uS/KgdgN7Pmx04br07BfRkwM5PBjIL2gFYFvymB4+JT1/wLQjZptzPG3kmJPpbckD/zgsJCQkhg/QJ3PVUWJ5Zt98AAAAASUVORK5CYII="
+            alt="linkedin"></a>
+
+
+      </div>
+    </div>
+    <!-- <div class="footer-bottom">
+      <p>©Copyright 2025 Vishant Solutions Pvt Ltd. All Right Reserved || Designed and Maintained by Bhoomi Techzone Pvt Ltd</p>
+    </div> -->
+
+  </footer>
+  <div class="footer-bottom">
+    <p>©Copyright 2025 Vishant Solutions Pvt Ltd. All Right Reserved || </p>
+  </div>
+
+
+<!-- WhatsApp Icon -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon">
+ <img src="data:image/png;base64,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" alt="whatsapp--v1">
+</a>
+
+<style>
+  /* Position the WhatsApp icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust this for vertical position */
+    right: 20px;  /* Adjust this for horizontal position */
+    z-index: 9999; /* Ensure it appears on top of other content */
+    border-radius: 50%; /* Make it round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon img {
+    width: 80px; /* Icon size */
+    height: 80px; /* Icon size */
+    /* border-radius: 50%; Round icon */
+    object-fit: cover; /* Ensure the icon is not stretched */
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover effect */
+.whatsapp-icon:hover img {
+    transform: scale(1.1);
+}
+
+</style>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
