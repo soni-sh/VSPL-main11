@@ -1178,7 +1178,7 @@ img, svg {
         display: block;
         width: 100%;
         margin-bottom: 40px;
-        text-align: justify;
+        text-align: left;
     }
 
     .footer .footer-center i {
