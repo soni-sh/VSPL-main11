@@ -1188,7 +1188,7 @@ img, svg {
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
-        padding: 0 10px; /* Added padding to avoid content sticking to edges */
+        padding: 0 5px; /* Added padding to avoid content sticking to edges */
     }
 }
 
